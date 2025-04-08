@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import {
   NbComponentStatus,
   NbGlobalLogicalPosition,
@@ -15,7 +16,7 @@ import {
 
 @Component({
   selector: 'ngx-toastr',
-  imports: [CommonModule, NbCardModule, NbCheckboxModule, NbOptionModule, NbSelectModule],
+  imports: [CommonModule, FormsModule, NbCardModule, NbCheckboxModule, NbOptionModule, NbSelectModule],
   styleUrls: ['./toastr.component.scss'],
   templateUrl: './toastr.component.html',
 })

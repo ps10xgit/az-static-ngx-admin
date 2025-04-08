@@ -3,7 +3,7 @@ import { NbCardModule, NbCheckboxModule, NbOptionModule, NbRadioModule, NbSelect
 
 @Component({
   selector: 'ngx-form-inputs',
-  imports: [NbCardModule, NbCheckboxModule, NbOptionModule, NbSelectModule],
+  imports: [NbCardModule, NbCheckboxModule, NbOptionModule, NbRadioModule, NbSelectModule],
   styleUrls: ['./form-inputs.component.scss'],
   templateUrl: './form-inputs.component.html',
 })
