@@ -8,6 +8,7 @@ import { Subject } from 'rxjs';
 
 @Component({
   selector: 'ngx-header',
+  standalone: false,
   styleUrls: ['./header.component.scss'],
   templateUrl: './header.component.html',
 })

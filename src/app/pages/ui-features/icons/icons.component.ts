@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { NbCardModule, NbIconLibraries, NbIconModule } from '@nebular/theme';
+import { NbIconLibraries } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-icons',
-  imports: [NbCardModule, NbIconModule],
+  standalone: false,
   styleUrls: ['./icons.component.scss'],
   templateUrl: './icons.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

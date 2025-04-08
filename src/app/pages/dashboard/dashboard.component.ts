@@ -11,6 +11,7 @@ interface CardSettings {
 
 @Component({
   selector: 'ngx-dashboard',
+  standalone: false,
   styleUrls: ['./dashboard.component.scss'],
   templateUrl: './dashboard.component.html',
 })

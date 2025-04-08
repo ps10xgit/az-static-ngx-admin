@@ -22,3 +22,9 @@ const routes: Routes = [{
   exports: [RouterModule],
 })
 export class EditorsRoutingModule { }
+
+export const routedComponents = [
+  EditorsComponent,
+  TinyMCEComponent,
+  CKEditorComponent,
+];

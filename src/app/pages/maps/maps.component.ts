@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'ngx-maps',
-  imports: [RouterOutlet],
+  standalone: false,
   template: `
     <router-outlet></router-outlet>
   `,

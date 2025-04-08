@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { NbCardModule, NbTabsetModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-popover-tabs',
-  imports: [NbTabsetModule],
+  standalone: false,
   template: `
     <nb-tabset>
       <nb-tab tabTitle="What's up?">
@@ -24,6 +23,7 @@ export class NgxPopoverTabsComponent {
 
 @Component({
   selector: 'ngx-popover-form',
+  standalone: false,
   template: `
     <div class="p-4">
       <form>
@@ -46,7 +46,7 @@ export class NgxPopoverFormComponent {
 
 @Component({
   selector: 'ngx-popover-card',
-  imports: [NbCardModule],
+  standalone: false,
   template: `
     <nb-card class="popover-card">
       <nb-card-header status="warning">

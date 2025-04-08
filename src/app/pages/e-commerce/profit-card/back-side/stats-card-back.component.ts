@@ -1,12 +1,10 @@
 import { Component, OnDestroy } from '@angular/core';
 import { StatsBarData } from '../../../../@core/data/stats-bar';
 import { takeWhile } from 'rxjs/operators';
-import { NbCardModule } from '@nebular/theme';
-import { StatsAreaChartComponent } from './stats-area-chart.component';
 
 @Component({
   selector: 'ngx-stats-card-back',
-  imports: [NbCardModule, StatsAreaChartComponent],
+  standalone: false,
   styleUrls: ['./stats-card-back.component.scss'],
   templateUrl: './stats-card-back.component.html',
 })

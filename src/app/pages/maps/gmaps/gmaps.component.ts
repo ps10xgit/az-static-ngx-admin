@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { GoogleMapsModule } from '@angular/google-maps';
-import { NbCardModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-gmaps',
-  imports: [GoogleMapsModule, NbCardModule],
+  standalone: false,
   styleUrls: ['./gmaps.component.scss'],
   templateUrl: './gmaps.component.html',
 })

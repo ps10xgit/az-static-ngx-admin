@@ -6,13 +6,10 @@ import { ProfitChartComponent } from './charts/profit-chart.component';
 import { OrdersChart } from '../../../@core/data/orders-chart';
 import { ProfitChart } from '../../../@core/data/profit-chart';
 import { OrderProfitChartSummary, OrdersProfitChartData } from '../../../@core/data/orders-profit-chart';
-import { NbCardModule, NbTabsetModule } from '@nebular/theme';
-import { ChartPanelHeaderComponent } from './chart-panel-header/chart-panel-header.component';
-import { ChartPanelSummaryComponent } from './chart-panel-summary/chart-panel-summary.component';
 
 @Component({
   selector: 'ngx-ecommerce-charts',
-  imports: [NbCardModule, NbTabsetModule, OrdersChartComponent, ProfitChartComponent, ChartPanelSummaryComponent, ChartPanelHeaderComponent],
+  standalone: false,
   styleUrls: ['./charts-panel.component.scss'],
   templateUrl: './charts-panel.component.html',
 })

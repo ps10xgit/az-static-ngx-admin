@@ -3,8 +3,9 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-chartjs-pie',
+  standalone: false,
   template: `
-    <chart type="pie" [data]="data" [options]="options"></chart>
+    <ngx-chartjs type="pie" [data]="data" [options]="options"></ngx-chartjs>
   `,
 })
 export class ChartjsPieComponent implements OnDestroy {

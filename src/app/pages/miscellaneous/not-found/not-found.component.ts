@@ -1,10 +1,9 @@
-import { NbCardModule, NbMenuService } from '@nebular/theme';
+import { NbMenuService } from '@nebular/theme';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'ngx-not-found',
-  imports: [FormsModule, NbCardModule],
+  standalone: false,
   styleUrls: ['./not-found.component.scss'],
   templateUrl: './not-found.component.html',
 })

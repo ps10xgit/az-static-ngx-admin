@@ -3,7 +3,7 @@ import { NbCardModule, NbDatepickerModule, NbDateService } from '@nebular/theme'
 
 @Component({
   selector: 'ngx-datepicker',
-  imports: [NbCardModule, NbDatepickerModule],
+  standalone: false,
   templateUrl: 'datepicker.component.html',
   styleUrls: ['datepicker.component.scss'],
 })

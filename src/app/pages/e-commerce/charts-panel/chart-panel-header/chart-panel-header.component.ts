@@ -1,12 +1,11 @@
 import { Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
-import { NbMediaBreakpoint, NbMediaBreakpointsService, NbOptionModule, NbSelectModule, NbThemeService } from '@nebular/theme';
+import { NbMediaBreakpoint, NbMediaBreakpointsService, NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators';
-import { ECommerceLegendChartComponent } from '../../legend-chart/legend-chart.component';
 
 
 @Component({
   selector: 'ngx-chart-panel-header',
-  imports: [NbOptionModule, NbSelectModule, ECommerceLegendChartComponent],
+  standalone: false,
   styleUrls: ['./chart-panel-header.component.scss'],
   templateUrl: './chart-panel-header.component.html',
 })

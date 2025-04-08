@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-d3-line',
+  standalone: false,
   template: `
     <ngx-charts-line-chart
       [scheme]="colorScheme"

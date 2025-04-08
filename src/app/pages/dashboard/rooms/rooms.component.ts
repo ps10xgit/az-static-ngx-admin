@@ -4,6 +4,7 @@ import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-rooms',
+  standalone: false,
   styleUrls: ['./rooms.component.scss'],
   template: `
     <nb-card [size]="breakpoint.width >= breakpoints.sm ? 'giant' : ''">

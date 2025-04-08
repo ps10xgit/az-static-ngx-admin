@@ -1,14 +1,12 @@
 import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
-import { NbOptionModule, NbThemeService } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 import { delay, takeWhile } from 'rxjs/operators';
 import { LayoutService } from '../../../../@core/utils/layout.service';
-import { ECommerceLegendChartComponent } from '../../legend-chart/legend-chart.component';
 import { graphic } from 'echarts/core';
-import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-visitors-statistics',
-  imports: [NbOptionModule, ECommerceLegendChartComponent, NgxEchartsModule],
+  standalone: false,
   styleUrls: ['./visitors-statistics.component.scss'],
   templateUrl: './visitors-statistics.component.html',
 })

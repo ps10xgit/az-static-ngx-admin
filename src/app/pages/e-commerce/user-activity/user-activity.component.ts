@@ -1,12 +1,12 @@
 import { Component, OnDestroy } from '@angular/core';
-import { NbCardModule, NbIconModule, NbListModule, NbSelectModule, NbThemeService } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators';
 
 import { UserActivityData, UserActive } from '../../../@core/data/user-activity';
 
 @Component({
   selector: 'ngx-user-activity',
-  imports: [NbCardModule, NbIconModule, NbListModule, NbSelectModule],
+  standalone: false,
   styleUrls: ['./user-activity.component.scss'],
   templateUrl: './user-activity.component.html',
 })

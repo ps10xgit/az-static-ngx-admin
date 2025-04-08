@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-one-column-layout',
+  standalone: false,
   styleUrls: ['./one-column.layout.scss'],
   template: `
     <nb-layout windowMode>

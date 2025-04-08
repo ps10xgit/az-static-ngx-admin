@@ -3,8 +3,9 @@ import { NbThemeService, NbColorHelper } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-chartjs-bar',
+  standalone: false,
   template: `
-    <chart type="bar" [data]="data" [options]="options"></chart>
+    <ngx-chartjs type="bar" [data]="data" [options]="options"></ngx-chartjs>
   `,
 })
 export class ChartjsBarComponent implements OnDestroy {

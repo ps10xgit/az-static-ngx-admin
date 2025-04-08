@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { NbCardModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-tooltip',
-  imports: [NbCardModule],
+  standalone: false,
   templateUrl: 'tooltip.component.html',
   styleUrls: ['tooltip.component.scss'],
 })

@@ -4,12 +4,11 @@ import { takeWhile } from 'rxjs/operators';
 
 import { ProfitChart } from '../../../../@core/data/profit-chart';
 import { LayoutService } from '../../../../@core/utils/layout.service';
-import { NgxEchartsModule } from 'ngx-echarts';
 import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-profit-chart',
-  imports: [NgxEchartsModule],
+  standalone: false,
   styleUrls: ['./charts-common.component.scss'],
   template: `
     <div echarts [options]="options" class="echart" (chartInit)="onChartInit($event)"></div>

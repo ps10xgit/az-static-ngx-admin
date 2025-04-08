@@ -1,13 +1,12 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { NbCardModule, NbIconModule, NbSelectModule, NbThemeService } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 import { interval , Subscription } from 'rxjs';
 import { switchMap, takeWhile } from 'rxjs/operators';
 import { LiveUpdateChart, EarningData } from '../../../../@core/data/earning';
-import { EarningLiveUpdateChartComponent } from './earning-live-update-chart.component';
 
 @Component({
   selector: 'ngx-earning-card-front',
-  imports: [NbCardModule, NbIconModule, NbSelectModule, EarningLiveUpdateChartComponent],
+  standalone: false,
   styleUrls: ['./earning-card-front.component.scss'],
   templateUrl: './earning-card-front.component.html',
 })

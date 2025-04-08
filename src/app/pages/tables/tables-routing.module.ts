@@ -25,3 +25,9 @@ const routes: Routes = [{
   exports: [RouterModule],
 })
 export class TablesRoutingModule { }
+
+export const routedComponents = [
+  TablesComponent,
+  SmartTableComponent,
+  TreeGridComponent,
+];

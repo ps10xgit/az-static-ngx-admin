@@ -1,14 +1,13 @@
 import { delay, takeWhile } from 'rxjs/operators';
 import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
-import { NbOptionModule, NbThemeService } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../../@core/utils';
 import { OutlineData } from '../../../../@core/data/visitors-analytics';
 import { graphic } from 'echarts/core';
-import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-visitors-analytics-chart',
-  imports: [NgxEchartsModule],
+  standalone: false,
   styleUrls: ['./visitors-analytics-chart.component.scss'],
   template: `
     <div echarts

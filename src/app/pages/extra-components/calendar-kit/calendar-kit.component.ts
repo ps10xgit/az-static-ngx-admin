@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import { CalendarKitMonthCellComponent } from './month-cell/month-cell.component';
-import { NbCalendarKitModule, NbCardModule } from '@nebular/theme';
 
 @Component({
     selector: 'ngx-calendar-kit',
-    imports: [NbCardModule, NbCalendarKitModule],
+    standalone: false,
     templateUrl: 'calendar-kit.component.html',
     styleUrls: ['calendar-kit.component.scss'],
 })

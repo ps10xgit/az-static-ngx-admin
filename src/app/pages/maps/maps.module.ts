@@ -5,7 +5,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { NbCardModule } from '@nebular/theme';
 
 import { ThemeModule } from '../../@theme/theme.module';
-import { MapsRoutingModule } from './maps-routing.module';
+import { MapsRoutingModule, routedComponents } from './maps-routing.module';
 
 @NgModule({
   imports: [
@@ -17,5 +17,8 @@ import { MapsRoutingModule } from './maps-routing.module';
     NbCardModule,
   ],
   exports: [],
+  declarations: [
+    ...routedComponents
+  ],
 })
 export class MapsModule { }

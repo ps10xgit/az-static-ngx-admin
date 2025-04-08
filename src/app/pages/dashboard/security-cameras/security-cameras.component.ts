@@ -7,6 +7,7 @@ import { Camera, SecurityCamerasData } from '../../../@core/data/security-camera
 
 @Component({
   selector: 'ngx-security-cameras',
+  standalone: false,
   styleUrls: ['./security-cameras.component.scss'],
   templateUrl: './security-cameras.component.html',
 })

@@ -8,7 +8,7 @@ import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-electricity-chart',
-  imports: [NgxEchartsModule],
+  standalone: false,
   styleUrls: ['./electricity-chart.component.scss'],
   template: `
     <div echarts
@@ -146,7 +146,7 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
               },
               areaStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
                     color: eTheme.areaGradFrom,
                   }, {

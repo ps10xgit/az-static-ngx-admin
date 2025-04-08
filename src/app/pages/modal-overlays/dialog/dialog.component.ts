@@ -1,12 +1,11 @@
 import { Component, TemplateRef } from '@angular/core';
-import { NbCardModule, NbDialogService } from '@nebular/theme';
+import { NbDialogService } from '@nebular/theme';
 import { ShowcaseDialogComponent } from './showcase-dialog/showcase-dialog.component';
 import { DialogNamePromptComponent } from './dialog-name-prompt/dialog-name-prompt.component';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'ngx-dialog',
-  imports: [FormsModule, NbCardModule],
+  standalone: false,
   templateUrl: 'dialog.component.html',
   styleUrls: ['dialog.component.scss'],
 })

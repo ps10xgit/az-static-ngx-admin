@@ -6,6 +6,7 @@ import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'ngx-temperature',
+  standalone: false,
   styleUrls: ['./temperature.component.scss'],
   templateUrl: './temperature.component.html',
 })

@@ -11,7 +11,7 @@ import { ECommerceVisitorsStatisticsComponent } from './visitors-statistics/visi
 
 @Component({
   selector: 'ngx-ecommerce-visitors-analytics',
-  imports: [NbCardModule, ECommerceLegendChartComponent, ECommerceVisitorsAnalyticsComponent, ECommerceVisitorsAnalyticsChartComponent, ECommerceVisitorsStatisticsComponent, SlideOutComponent],
+  standalone: false,
   styleUrls: ['./visitors-analytics.component.scss'],
   templateUrl: './visitors-analytics.component.html',
 })

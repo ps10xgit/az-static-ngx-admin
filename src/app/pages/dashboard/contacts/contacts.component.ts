@@ -6,6 +6,7 @@ import { Contacts, RecentUsers, UserData } from '../../../@core/data/users';
 
 @Component({
   selector: 'ngx-contacts',
+  standalone: false,
   styleUrls: ['./contacts.component.scss'],
   templateUrl: './contacts.component.html',
 })

@@ -6,6 +6,7 @@ import { TrafficChartData } from '../../../@core/data/traffic-chart';
 
 @Component({
   selector: 'ngx-traffic',
+  standalone: false,
   styleUrls: ['./traffic.component.scss'],
   template: `
     <nb-card size="tiny">

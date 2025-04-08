@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { LeafletModule } from '@bluehalo/ngx-leaflet';
-import { NbCardModule } from '@nebular/theme';
 
 import * as L from 'leaflet';
 
 @Component({
   selector: 'ngx-leaflet',
-  imports: [NbCardModule, LeafletModule],
+  standalone: false,
   styleUrls: ['./leaflet.component.scss'],
   template: `
     <nb-card>

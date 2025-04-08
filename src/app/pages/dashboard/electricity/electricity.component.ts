@@ -7,6 +7,7 @@ import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'ngx-electricity',
+  standalone: false,
   styleUrls: ['./electricity.component.scss'],
   templateUrl: './electricity.component.html',
 })

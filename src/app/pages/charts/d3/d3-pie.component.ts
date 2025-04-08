@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-d3-pie',
+  standalone: false,
   template: `
     <ngx-charts-pie-chart
       [scheme]="colorScheme"

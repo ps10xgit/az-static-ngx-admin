@@ -6,6 +6,7 @@ import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-traffic-chart',
+  standalone: false,
   template: `
     <div echarts
          [options]="option"

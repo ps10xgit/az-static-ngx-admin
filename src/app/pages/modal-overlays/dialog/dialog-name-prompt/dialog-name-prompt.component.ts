@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { NbCardModule, NbDialogRef } from '@nebular/theme';
+import { NbDialogRef } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-dialog-name-prompt',
-  imports: [NbCardModule],
+  standalone: false,
   templateUrl: 'dialog-name-prompt.component.html',
   styleUrls: ['dialog-name-prompt.component.scss'],
 })

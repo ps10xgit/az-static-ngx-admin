@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-echarts-multiple-xaxis',
+  standalone: false,
   template: `
     <div echarts [options]="options" class="echart"></div>
   `,

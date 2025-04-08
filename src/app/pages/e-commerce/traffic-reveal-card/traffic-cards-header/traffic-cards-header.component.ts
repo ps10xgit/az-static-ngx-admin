@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
-import { NbCardModule, NbOptionModule, NbSelectModule, NbThemeService } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-traffic-cards-header',
-  imports: [NbCardModule, NbOptionModule, NbSelectModule],
+  standalone: false,
   styleUrls: ['./traffic-cards-header.component.scss'],
   templateUrl: './traffic-cards-header.component.html',
 })

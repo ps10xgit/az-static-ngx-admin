@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-d3-area-stack',
+  standalone: false,
   template: `
     <ngx-charts-area-chart
       [scheme]="colorScheme"

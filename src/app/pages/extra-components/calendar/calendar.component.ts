@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { NbCalendarKitModule, NbCalendarModule, NbCalendarRange, NbCalendarRangeModule, NbDateService } from '@nebular/theme';
+import { NbCalendarRange, NbDateService } from '@nebular/theme';
 import { DayCellComponent } from './day-cell/day-cell.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'ngx-calendar',
-    imports: [CommonModule, NbCalendarModule, NbCalendarRangeModule, NbCalendarKitModule, DayCellComponent],
+    standalone: false,
     templateUrl: 'calendar.component.html',
     styleUrls: ['calendar.component.scss'],
 })

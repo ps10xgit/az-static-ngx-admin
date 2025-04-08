@@ -1,13 +1,12 @@
 import { delay, takeWhile } from 'rxjs/operators';
 import { AfterViewInit, Component, Input, OnChanges, OnDestroy } from '@angular/core';
-import { NbCardModule, NbIconModule, NbThemeService } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../../@core/utils/layout.service';
 import { graphic } from 'echarts/core';
-import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-earning-live-update-chart',
-  imports: [NgxEchartsModule, NbIconModule],
+  standalone: false,
   styleUrls: ['earning-card-front.component.scss'],
   template: `
     <div echarts

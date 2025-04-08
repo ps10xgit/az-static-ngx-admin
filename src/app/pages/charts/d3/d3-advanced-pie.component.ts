@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-d3-advanced-pie',
+  standalone: false,
   template: `
     <ngx-charts-advanced-pie-chart
       [scheme]="colorScheme"

@@ -6,6 +6,7 @@ import { Subject } from 'rxjs';
 
 @Component({
   selector: 'ngx-room-selector',
+  standalone: false,
   templateUrl: './room-selector.component.html',
   styleUrls: ['./room-selector.component.scss'],
 })

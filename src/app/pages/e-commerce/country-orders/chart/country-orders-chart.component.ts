@@ -2,12 +2,11 @@ import { Component, Input, OnChanges, OnDestroy, SimpleChanges } from '@angular/
 import { NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators';
 import { LayoutService } from '../../../../@core/utils/layout.service';
-import { NgxEchartsModule } from 'ngx-echarts';
 import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-country-orders-chart',
-  imports: [NgxEchartsModule],
+  standalone: false,
   styleUrls: ['./country-orders-chart.component.scss'],
   template: `
     <div class="header">

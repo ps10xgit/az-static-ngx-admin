@@ -3,7 +3,8 @@ import { NbCardModule, NbIconModule, NbInputModule, NbTreeGridModule } from '@ne
 import { Ng2SmartTableModule } from '@vamidicreations/ng2-smart-table'
 
 import { ThemeModule } from '../../@theme/theme.module';
-import { TablesRoutingModule } from './tables-routing.module';
+import { TablesRoutingModule, routedComponents } from './tables-routing.module';
+import { FsIconComponent } from './tree-grid/tree-grid.component';
 
 @NgModule({
   imports: [
@@ -14,6 +15,10 @@ import { TablesRoutingModule } from './tables-routing.module';
     ThemeModule,
     TablesRoutingModule,
     Ng2SmartTableModule,
+  ],
+  declarations: [
+    ...routedComponents,
+    FsIconComponent,
   ],
 })
 export class TablesModule { }

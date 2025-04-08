@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { NbCardModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-grid',
-  imports: [NbCardModule],
+  standalone: false,
   styleUrls: ['./grid.component.scss'],
   templateUrl: './grid.component.html',
 })

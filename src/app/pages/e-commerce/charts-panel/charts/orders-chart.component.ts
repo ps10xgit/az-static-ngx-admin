@@ -6,11 +6,10 @@ import { OrdersChart } from '../../../../@core/data/orders-chart';
 import { LayoutService } from '../../../../@core/utils/layout.service';
 
 import { graphic } from 'echarts/core';
-import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-orders-chart',
-  imports: [NgxEchartsModule],
+  standalone: false,
   styleUrls: ['./charts-common.component.scss'],
   template: `
     <div echarts

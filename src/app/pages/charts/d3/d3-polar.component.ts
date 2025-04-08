@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-d3-polar',
+  standalone: false,
   template: `
     <ngx-charts-polar-chart
       [scheme]="colorScheme"

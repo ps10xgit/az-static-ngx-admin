@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-d3-bar',
+  standalone: false,
   template: `
     <ngx-charts-bar-vertical
       [scheme]="colorScheme"

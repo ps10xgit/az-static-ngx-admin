@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-kitten',
+  standalone: false,
   styleUrls: ['./kitten.component.scss'],
   templateUrl: './kitten.component.html',
 })

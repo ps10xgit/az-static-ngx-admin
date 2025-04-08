@@ -6,6 +6,7 @@ declare const echarts: any;
 
 @Component({
   selector: 'ngx-solar',
+  standalone: false,
   styleUrls: ['./solar.component.scss'],
   template: `
     <nb-card size="tiny" class="solar-card">

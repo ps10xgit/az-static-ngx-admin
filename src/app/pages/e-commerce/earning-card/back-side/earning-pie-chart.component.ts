@@ -1,12 +1,11 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
-import { NgxEchartsModule } from 'ngx-echarts';
 import { delay, takeWhile } from 'rxjs/operators';
 import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-earning-pie-chart',
-  imports: [NgxEchartsModule],
+  standalone: false,
   styleUrls: ['./earning-card-back.component.scss'],
   template: `
     <div echarts

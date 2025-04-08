@@ -2,6 +2,7 @@ import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular
 
 @Component({
   selector: 'ngx-search-input',
+  standalone: false,
   styleUrls: ['./search-input.component.scss'],
   template: `
     <i class="control-icon ion ion-ios-search"

@@ -1,6 +1,4 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import {
   NbComponentStatus,
   NbGlobalLogicalPosition,
@@ -8,15 +6,11 @@ import {
   NbGlobalPosition,
   NbToastrService,
   NbToastrConfig,
-  NbCardModule,
-  NbOptionModule,
-  NbSelectModule,
-  NbCheckboxModule,
 } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-toastr',
-  imports: [CommonModule, FormsModule, NbCardModule, NbCheckboxModule, NbOptionModule, NbSelectModule],
+  standalone: false,
   styleUrls: ['./toastr.component.scss'],
   templateUrl: './toastr.component.html',
 })

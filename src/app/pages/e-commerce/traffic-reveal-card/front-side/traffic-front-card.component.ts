@@ -1,13 +1,12 @@
 import { Component, Input, OnDestroy } from '@angular/core';
-import { NbListModule, NbThemeService } from '@nebular/theme';
+import { NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators';
 
 import { TrafficList } from '../../../../@core/data/traffic-list';
-import { TrafficBarComponent } from './traffic-bar/traffic-bar.component';
 
 @Component({
   selector: 'ngx-traffic-front-card',
-  imports: [NbListModule, TrafficBarComponent],
+  standalone: false,
   styleUrls: ['./traffic-front-card.component.scss'],
   templateUrl: './traffic-front-card.component.html',
 })
