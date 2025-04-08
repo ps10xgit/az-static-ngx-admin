@@ -2,9 +2,13 @@ import { Component, OnDestroy } from '@angular/core';
 import { TrafficList, TrafficListData } from '../../../@core/data/traffic-list';
 import { TrafficBarData, TrafficBar } from '../../../@core/data/traffic-bar';
 import { takeWhile } from 'rxjs/operators';
+import { NbCardModule, NbIconModule } from '@nebular/theme';
+import { TrafficCardsHeaderComponent } from './traffic-cards-header/traffic-cards-header.component';
+import { TrafficBackCardComponent } from './back-side/traffic-back-card.component';
 
 @Component({
   selector: 'ngx-traffic-reveal-card',
+  imports: [NbCardModule, NbIconModule, TrafficCardsHeaderComponent, TrafficBackCardComponent],
   styleUrls: ['./traffic-reveal-card.component.scss'],
   templateUrl: './traffic-reveal-card.component.html',
 })

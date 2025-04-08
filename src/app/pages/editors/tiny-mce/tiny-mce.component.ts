@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NbCardModule } from '@nebular/theme';
+import { TinyMCEComponent } from '../../../@theme/components';
 
 @Component({
   selector: 'ngx-tiny-mce-page',
@@ -15,5 +16,5 @@ import { NbCardModule } from '@nebular/theme';
     </nb-card>
   `,
 })
-export class TinyMCEComponent {
+export class TinyMCEPage {
 }
