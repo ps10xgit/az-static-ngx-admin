@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { NbActionsModule, NbCardModule, NbComponentShape, NbComponentSize, NbComponentStatus } from '@nebular/theme';
+import { NbActionsModule, NbCardModule, NbComponentShape, NbComponentSize, NbComponentStatus, NbIconModule, NbUserModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-buttons',
-  imports: [NbActionsModule, NbCardModule],
+  imports: [NbActionsModule, NbCardModule, NbIconModule, NbUserModule],
   styleUrls: ['./buttons.component.scss'],
   templateUrl: './buttons.component.html',
 })

@@ -2,6 +2,7 @@ import { Component, EventEmitter } from '@angular/core';
 import {
   NbCalendarCell,
   NbCalendarDayPickerComponent,
+  NbCalendarKitModule,
   NbCalendarMonthModelService,
   NbDateService,
 } from '@nebular/theme';
@@ -9,6 +10,7 @@ import { TranslationWidth } from '@angular/common';
 
 @Component({
   selector: 'ngx-calendar-kit-month-cell',
+  imports: [NbCalendarKitModule],
   styleUrls: ['month-cell.component.scss'],
   templateUrl: 'month-cell.component.html',
 })

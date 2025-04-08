@@ -41,12 +41,12 @@
             "scripts": [
               "node_modules/pace-js/pace.min.js",
               "node_modules/tinymce/tinymce.min.js",
-              "node_modules/tinymce/themes/theme.min.js",
+              "node_modules/tinymce/themes/silver/theme.min.js",
               "node_modules/tinymce/plugins/link/plugin.min.js",
               "node_modules/tinymce/plugins/table/plugin.min.js",
               "node_modules/echarts/dist/echarts.min.js",
               "node_modules/echarts/dist/extension/bmap.min.js",
-              "node_modules/chart.js/dist/Chart.min.js"
+              "node_modules/angular2-chartjs/node_modules/chart.js/dist/Chart.min.js"
             ],
             "allowedCommonJsDependencies": [
               "angular2-chartjs",
@@ -114,7 +114,7 @@
             "scripts": [
               "node_modules/pace-js/pace.min.js",
               "node_modules/tinymce/tinymce.min.js",
-              "node_modules/tinymce/themes/modern/theme.min.js",
+              "node_modules/tinymce/themes/silver/theme.min.js",
               "node_modules/tinymce/plugins/link/plugin.min.js",
               "node_modules/tinymce/plugins/paste/plugin.min.js",
               "node_modules/tinymce/plugins/table/plugin.min.js",

@@ -18,19 +18,6 @@ import {
 import { ThemeModule } from '../../@theme/theme.module';
 import { ExtraComponentsRoutingModule } from './extra-components-routing.module';
 
-// components
-import { AlertComponent } from './alert/alert.component';
-import { CalendarComponent } from './calendar/calendar.component';
-import { CalendarKitFullCalendarShowcaseComponent } from './calendar-kit/calendar-kit.component';
-import { CalendarKitMonthCellComponent } from './calendar-kit/month-cell/month-cell.component';
-
-const COMPONENTS = [
-  AlertComponent,
-  CalendarComponent,
-  CalendarKitFullCalendarShowcaseComponent,
-  CalendarKitMonthCellComponent,
-];
-
 const MODULES = [
   NbAlertModule,
   NbActionsModule,
@@ -52,9 +39,6 @@ const MODULES = [
 @NgModule({
   imports: [
     ...MODULES,
-  ],
-  declarations: [
-    ...COMPONENTS,
   ],
 })
 export class ExtraComponentsModule { }
