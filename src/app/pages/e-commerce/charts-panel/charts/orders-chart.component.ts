@@ -5,8 +5,12 @@ import { delay, takeWhile } from 'rxjs/operators';
 import { OrdersChart } from '../../../../@core/data/orders-chart';
 import { LayoutService } from '../../../../@core/utils/layout.service';
 
+import { graphic } from 'echarts/core';
+import { NgxEchartsModule } from 'ngx-echarts';
+
 @Component({
   selector: 'ngx-orders-chart',
+  imports: [NgxEchartsModule],
   styleUrls: ['./charts-common.component.scss'],
   template: `
     <div echarts
@@ -158,7 +162,7 @@ export class OrdersChartComponent implements AfterViewInit, OnDestroy, OnChanges
       },
       areaStyle: {
         normal: {
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+          color: new graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
             color: eTheme.firstAreaGradFrom,
           }, {
@@ -192,7 +196,7 @@ export class OrdersChartComponent implements AfterViewInit, OnDestroy, OnChanges
         normal: {
           width: eTheme.lineWidth,
           type: eTheme.lineStyle,
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+          color: new graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
             color: eTheme.secondLineGradFrom,
           }, {
@@ -203,7 +207,7 @@ export class OrdersChartComponent implements AfterViewInit, OnDestroy, OnChanges
       },
       areaStyle: {
         normal: {
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+          color: new graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
             color: eTheme.secondAreaGradFrom,
           }, {
@@ -236,7 +240,7 @@ export class OrdersChartComponent implements AfterViewInit, OnDestroy, OnChanges
         normal: {
           width: eTheme.lineWidth,
           type: eTheme.lineStyle,
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+          color: new graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
             color: eTheme.thirdLineGradFrom,
           }, {
@@ -247,7 +251,7 @@ export class OrdersChartComponent implements AfterViewInit, OnDestroy, OnChanges
       },
       areaStyle: {
         normal: {
-          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+          color: new graphic.LinearGradient(0, 0, 0, 1, [{
             offset: 0,
             color: eTheme.thirdAreaGradFrom,
           }, {

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { combineLatest } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
 import { NbCardModule, NbThemeService } from '@nebular/theme';
-import { registerMap } from 'echarts';
+import { registerMap } from 'echarts/core';
 import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({

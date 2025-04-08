@@ -1,10 +1,13 @@
 import { delay, takeWhile } from 'rxjs/operators';
 import { AfterViewInit, Component, Input, OnChanges, OnDestroy } from '@angular/core';
-import { NbThemeService } from '@nebular/theme';
+import { NbCardModule, NbIconModule, NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../../@core/utils/layout.service';
+import { graphic } from 'echarts/core';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-earning-live-update-chart',
+  imports: [NgxEchartsModule, NbIconModule],
   styleUrls: ['earning-card-front.component.scss'],
   template: `
     <div echarts
@@ -123,7 +126,7 @@ export class EarningLiveUpdateChartComponent implements AfterViewInit, OnDestroy
           },
           areaStyle: {
             normal: {
-              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+              color: new graphic.LinearGradient(0, 0, 0, 1, [{
                 offset: 0,
                 color: earningLineTheme.gradFrom,
               }, {

@@ -2,9 +2,12 @@ import { delay, takeWhile } from 'rxjs/operators';
 import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../../@core/utils';
+import { graphic } from 'echarts/core';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-stats-ares-chart',
+  imports: [ NgxEchartsModule ],
   styleUrls: ['stats-card-back.component.scss'],
   template: `
     <div echarts [options]="option"
@@ -139,7 +142,7 @@ export class StatsAreaChartComponent implements AfterViewInit, OnDestroy {
               },
               areaStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
                     color: trafficTheme.gradFrom,
                   }, {

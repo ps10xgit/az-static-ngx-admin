@@ -5,11 +5,13 @@ import { OutlineData, VisitorsAnalyticsData } from '../../../@core/data/visitors
 import { forkJoin } from 'rxjs';
 import { SlideOutComponent } from '../slide-out/slide-out.component';
 import { ECommerceVisitorsAnalyticsChartComponent } from './visitors-analytics-chart/visitors-analytics-chart.component';
+import { ECommerceLegendChartComponent } from '../legend-chart/legend-chart.component';
+import { ECommerceVisitorsStatisticsComponent } from './visitors-statistics/visitors-statistics.component';
 
 
 @Component({
   selector: 'ngx-ecommerce-visitors-analytics',
-  imports: [NbCardModule, ECommerceVisitorsAnalyticsComponent, ECommerceVisitorsAnalyticsChartComponent, SlideOutComponent],
+  imports: [NbCardModule, ECommerceLegendChartComponent, ECommerceVisitorsAnalyticsComponent, ECommerceVisitorsAnalyticsChartComponent, ECommerceVisitorsStatisticsComponent, SlideOutComponent],
   styleUrls: ['./visitors-analytics.component.scss'],
   templateUrl: './visitors-analytics.component.html',
 })

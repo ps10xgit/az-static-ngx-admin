@@ -1,9 +1,12 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, Output } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
+import { NgxEchartsModule } from 'ngx-echarts';
 import { delay, takeWhile } from 'rxjs/operators';
+import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-earning-pie-chart',
+  imports: [NgxEchartsModule],
   styleUrls: ['./earning-card-back.component.scss'],
   template: `
     <div echarts
@@ -106,7 +109,7 @@ export class EarningPieChartComponent implements AfterViewInit, OnDestroy {
               },
               itemStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [
                     {
                       offset: 0,
                       color: earningPie.firstPieGradientLeft,
@@ -143,7 +146,7 @@ export class EarningPieChartComponent implements AfterViewInit, OnDestroy {
               },
               itemStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [
                     {
                       offset: 0,
                       color: earningPie.secondPieGradientLeft,
@@ -180,7 +183,7 @@ export class EarningPieChartComponent implements AfterViewInit, OnDestroy {
               },
               itemStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [
                     {
                       offset: 0,
                       color: earningPie.thirdPieGradientLeft,

@@ -6,10 +6,12 @@ import { CountryOrdersMapService } from './country-orders-map.service';
 import { NbThemeService } from '@nebular/theme';
 import { combineLatest } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
+import { LeafletModule } from '@bluehalo/ngx-leaflet';
 
 
 @Component({
   selector: 'ngx-country-orders-map',
+  imports: [LeafletModule],
   styleUrls: ['./country-orders-map.component.scss'],
   template: `
     <div leaflet [leafletOptions]="options" [leafletLayers]="layers" (leafletMapReady)="mapReady($event)"></div>

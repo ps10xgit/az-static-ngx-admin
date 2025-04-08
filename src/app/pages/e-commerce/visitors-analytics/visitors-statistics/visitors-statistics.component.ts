@@ -1,13 +1,14 @@
 import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
-import { NbThemeService } from '@nebular/theme';
+import { NbOptionModule, NbThemeService } from '@nebular/theme';
 import { delay, takeWhile } from 'rxjs/operators';
 import { LayoutService } from '../../../../@core/utils/layout.service';
 import { ECommerceLegendChartComponent } from '../../legend-chart/legend-chart.component';
-
+import { graphic } from 'echarts/core';
+import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-visitors-statistics',
-  imports: [ECommerceLegendChartComponent],
+  imports: [NbOptionModule, ECommerceLegendChartComponent, NgxEchartsModule],
   styleUrls: ['./visitors-statistics.component.scss'],
   templateUrl: './visitors-statistics.component.html',
 })
@@ -95,7 +96,7 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
               },
               itemStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [
                     {
                       offset: 0,
                       color: visitorsPie.firstPieGradientLeft,
@@ -160,7 +161,7 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
               },
               itemStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1),
+                  color: new graphic.LinearGradient(0, 0, 0, 1),
                 },
               },
               hoverAnimation: false,
@@ -178,7 +179,7 @@ export class ECommerceVisitorsStatisticsComponent implements AfterViewInit, OnDe
               },
               itemStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [
                     {
                       offset: 0,
                       color: visitorsPie.secondPieGradientLeft,
