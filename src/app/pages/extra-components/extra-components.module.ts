@@ -20,9 +20,7 @@ import { ExtraComponentsRoutingModule } from './extra-components-routing.module'
 
 // components
 import { ExtraComponentsComponent } from './extra-components.component';
-import { SpinnerInTabsComponent } from './spinner/spinner-in-tabs/spinner-in-tabs.component';
 import { SpinnerInButtonsComponent } from './spinner/spinner-in-buttons/spinner-in-buttons.component';
-import { SpinnerSizesComponent } from './spinner/spinner-sizes/spinner-sizes.component';
 import { SpinnerColorComponent } from './spinner/spinner-color/spinner-color.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import {
@@ -45,9 +43,7 @@ const COMPONENTS = [
   InteractiveProgressBarComponent,
   SpinnerComponent,
   SpinnerColorComponent,
-  SpinnerSizesComponent,
   SpinnerInButtonsComponent,
-  SpinnerInTabsComponent,
   CalendarComponent,
   DayCellComponent,
   ChatComponent,

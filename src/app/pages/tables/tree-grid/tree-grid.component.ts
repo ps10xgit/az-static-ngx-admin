@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { NbSortDirection, NbSortRequest, NbTreeGridDataSource, NbTreeGridDataSourceBuilder } from '@nebular/theme';
+import { NbCardModule, NbSortDirection, NbSortRequest, NbTreeGridDataSource, NbTreeGridDataSourceBuilder, NbTreeGridModule } from '@nebular/theme';
 
 interface TreeNode<T> {
   data: T;
@@ -16,6 +16,7 @@ interface FSEntry {
 
 @Component({
   selector: 'ngx-tree-grid',
+  imports: [NbCardModule, NbTreeGridModule],
   templateUrl: './tree-grid.component.html',
   styleUrls: ['./tree-grid.component.scss'],
 })

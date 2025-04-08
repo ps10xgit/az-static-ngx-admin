@@ -1,8 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PositionModel } from '../entity/position.model';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @Component({
   selector: 'ngx-map',
+  imports: [GoogleMapsModule],
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
 })

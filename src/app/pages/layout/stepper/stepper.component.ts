@@ -1,8 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
+import { NbCardModule, NbStepperModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-stepper',
+  imports: [NbCardModule, NbStepperModule, CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: 'stepper.component.html',
   styleUrls: ['stepper.component.scss'],
 })

@@ -1,8 +1,9 @@
 import { Component, OnDestroy } from '@angular/core';
-import { NbThemeService, NbMediaBreakpoint, NbMediaBreakpointsService } from '@nebular/theme';
+import { NbThemeService, NbMediaBreakpoint, NbMediaBreakpointsService, NbCardModule, NbAlertModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-typography',
+  imports: [NbAlertModule, NbCardModule],
   styleUrls: ['./typography.component.scss'],
   templateUrl: './typography.component.html',
 })

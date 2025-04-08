@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NbCardModule, NbRouteTabsetModule, NbTabsetModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-tab1',
@@ -24,6 +25,7 @@ export class Tab2Component { }
 
 @Component({
   selector: 'ngx-tabs',
+  imports: [NbCardModule, NbRouteTabsetModule, NbTabsetModule],
   styleUrls: ['./tabs.component.scss'],
   templateUrl: './tabs.component.html',
 })

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import {
   NbComponentStatus,
@@ -6,10 +7,15 @@ import {
   NbGlobalPosition,
   NbToastrService,
   NbToastrConfig,
+  NbCardModule,
+  NbOptionModule,
+  NbSelectModule,
+  NbCheckboxModule,
 } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-toastr',
+  imports: [CommonModule, NbCardModule, NbCheckboxModule, NbOptionModule, NbSelectModule],
   styleUrls: ['./toastr.component.scss'],
   templateUrl: './toastr.component.html',
 })

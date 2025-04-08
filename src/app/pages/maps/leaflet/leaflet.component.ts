@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { NbCardModule } from '@nebular/theme';
 
 import * as L from 'leaflet';
 
 @Component({
   selector: 'ngx-leaflet',
+  imports: [NbCardModule, LeafletComponent],
   styleUrls: ['./leaflet.component.scss'],
   template: `
     <nb-card>

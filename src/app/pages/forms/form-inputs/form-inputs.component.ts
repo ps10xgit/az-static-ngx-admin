@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { NbCardModule, NbCheckboxModule, NbOptionModule, NbRadioModule, NbSelectModule } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-form-inputs',
+  imports: [NbCardModule, NbCheckboxModule, NbOptionModule, NbSelectModule],
   styleUrls: ['./form-inputs.component.scss'],
   templateUrl: './form-inputs.component.html',
 })
