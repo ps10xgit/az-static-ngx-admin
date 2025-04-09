@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-interactive-progress-bar',
+  standalone: false,
   templateUrl: 'interactive-progress-bar.component.html',
   styleUrls: ['interactive-progress-bar.component.scss'],
 })

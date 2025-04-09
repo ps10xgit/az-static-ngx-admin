@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-tooltip',
+  standalone: false,
   templateUrl: 'tooltip.component.html',
   styleUrls: ['tooltip.component.scss'],
 })

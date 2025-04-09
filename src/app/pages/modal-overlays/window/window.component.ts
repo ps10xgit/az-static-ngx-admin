@@ -4,6 +4,7 @@ import { WindowFormComponent } from './window-form/window-form.component';
 
 @Component({
   selector: 'ngx-window',
+  standalone: false,
   templateUrl: 'window.component.html',
   styleUrls: ['window.component.scss'],
 })

@@ -4,9 +4,11 @@ import { takeWhile } from 'rxjs/operators';
 
 import { ProfitChart } from '../../../../@core/data/profit-chart';
 import { LayoutService } from '../../../../@core/utils/layout.service';
+import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-profit-chart',
+  standalone: false,
   styleUrls: ['./charts-common.component.scss'],
   template: `
     <div echarts [options]="options" class="echart" (chartInit)="onChartInit($event)"></div>
@@ -110,7 +112,7 @@ export class ProfitChartComponent implements AfterViewInit, OnDestroy, OnChanges
           barWidth: '20%',
           itemStyle: {
             normal: {
-              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+              color: new graphic.LinearGradient(0, 0, 0, 1, [{
                 offset: 0,
                 color: eTheme.firstLineGradFrom,
               }, {
@@ -127,7 +129,7 @@ export class ProfitChartComponent implements AfterViewInit, OnDestroy, OnChanges
           barWidth: '20%',
           itemStyle: {
             normal: {
-              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+              color: new graphic.LinearGradient(0, 0, 0, 1, [{
                 offset: 0,
                 color: eTheme.secondLineGradFrom,
               }, {
@@ -144,7 +146,7 @@ export class ProfitChartComponent implements AfterViewInit, OnDestroy, OnChanges
           barWidth: '20%',
           itemStyle: {
             normal: {
-              color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+              color: new graphic.LinearGradient(0, 0, 0, 1, [{
                 offset: 0,
                 color: eTheme.thirdLineGradFrom,
               }, {

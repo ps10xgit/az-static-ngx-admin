@@ -3,6 +3,7 @@ import { NbComponentShape, NbComponentSize, NbComponentStatus } from '@nebular/t
 
 @Component({
   selector: 'ngx-buttons',
+  standalone: false,
   styleUrls: ['./buttons.component.scss'],
   templateUrl: './buttons.component.html',
 })

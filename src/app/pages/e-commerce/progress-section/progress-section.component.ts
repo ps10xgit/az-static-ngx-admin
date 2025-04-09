@@ -4,6 +4,7 @@ import { takeWhile } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-progress-section',
+  standalone: false,
   styleUrls: ['./progress-section.component.scss'],
   templateUrl: './progress-section.component.html',
 })

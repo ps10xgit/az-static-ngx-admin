@@ -1,10 +1,13 @@
 import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService, NbColorHelper } from '@nebular/theme';
+import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
   selector: 'ngx-chartjs-bar',
+  standalone: true,
+  imports: [BaseChartDirective],
   template: `
-    <chart type="bar" [data]="data" [options]="options"></chart>
+    <canvas baseChart type="bar" [data]="data" [options]="options"></canvas>
   `,
 })
 export class ChartjsBarComponent implements OnDestroy {

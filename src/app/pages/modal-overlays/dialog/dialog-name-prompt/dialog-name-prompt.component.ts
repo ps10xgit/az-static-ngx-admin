@@ -3,6 +3,7 @@ import { NbDialogRef } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-dialog-name-prompt',
+  standalone: false,
   templateUrl: 'dialog-name-prompt.component.html',
   styleUrls: ['dialog-name-prompt.component.scss'],
 })

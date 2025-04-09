@@ -4,6 +4,7 @@ import * as L from 'leaflet';
 
 @Component({
   selector: 'ngx-leaflet',
+  standalone: false,
   styleUrls: ['./leaflet.component.scss'],
   template: `
     <nb-card>

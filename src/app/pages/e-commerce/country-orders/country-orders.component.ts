@@ -5,6 +5,7 @@ import { CountryOrderData } from '../../../@core/data/country-order';
 
 @Component({
   selector: 'ngx-country-orders',
+  standalone: false,
   styleUrls: ['./country-orders.component.scss'],
   template: `
     <nb-card [size]="breakpoint.width >= breakpoints.md ? 'medium' : 'giant'">

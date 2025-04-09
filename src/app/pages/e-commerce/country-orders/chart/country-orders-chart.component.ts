@@ -2,10 +2,11 @@ import { Component, Input, OnChanges, OnDestroy, SimpleChanges } from '@angular/
 import { NbThemeService } from '@nebular/theme';
 import { takeWhile } from 'rxjs/operators';
 import { LayoutService } from '../../../../@core/utils/layout.service';
-
+import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-country-orders-chart',
+  standalone: false,
   styleUrls: ['./country-orders-chart.component.scss'],
   template: `
     <div class="header">
@@ -148,7 +149,7 @@ export class CountryOrdersChartComponent implements OnDestroy, OnChanges {
               cursor: 'default',
               itemStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(1, 0, 0, 0, [{
+                  color: new graphic.LinearGradient(1, 0, 0, 0, [{
                     offset: 0,
                     color: countriesTheme.chartGradientFrom,
                   }, {

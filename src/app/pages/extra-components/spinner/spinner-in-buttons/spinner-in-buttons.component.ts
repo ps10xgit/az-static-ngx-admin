@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-spinner-in-buttons',
+  standalone: false,
   templateUrl: 'spinner-in-buttons.component.html',
   styleUrls: ['spinner-in-buttons.component.scss'],
 })

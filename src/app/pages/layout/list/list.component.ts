@@ -3,6 +3,7 @@ import { fruits } from './fruits-list';
 
 @Component({
   selector: 'ngx-list',
+  standalone: false,
   templateUrl: 'list.component.html',
   styleUrls: ['list.component.scss'],
 })

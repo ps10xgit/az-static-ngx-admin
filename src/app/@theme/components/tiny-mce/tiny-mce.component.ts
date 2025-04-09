@@ -3,6 +3,7 @@ import { LocationStrategy } from '@angular/common';
 
 @Component({
   selector: 'ngx-tiny-mce',
+  standalone: false,
   template: '',
 })
 export class TinyMCEComponent implements OnDestroy, AfterViewInit {
@@ -19,8 +20,7 @@ export class TinyMCEComponent implements OnDestroy, AfterViewInit {
   ngAfterViewInit() {
     tinymce.init({
       target: this.host.nativeElement,
-      plugins: ['link', 'paste', 'table'],
-      skin_url: `${this.locationStrategy.getBaseHref()}assets/skins/lightgray`,
+      plugins: ['link', 'table'],
       setup: editor => {
         this.editor = editor;
         editor.on('keyup', () => {

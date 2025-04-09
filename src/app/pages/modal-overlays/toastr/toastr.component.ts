@@ -10,6 +10,7 @@ import {
 
 @Component({
   selector: 'ngx-toastr',
+  standalone: false,
   styleUrls: ['./toastr.component.scss'],
   templateUrl: './toastr.component.html',
 })

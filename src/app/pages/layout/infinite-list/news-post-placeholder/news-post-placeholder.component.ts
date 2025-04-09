@@ -2,6 +2,7 @@ import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'ngx-news-post-placeholder',
+  standalone: false,
   templateUrl: 'news-post-placeholder.component.html',
   styleUrls: ['news-post-placeholder.component.scss'],
 })

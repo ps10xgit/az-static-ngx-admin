@@ -6,6 +6,7 @@ import {
 
 @Component({
   selector: 'ngx-popovers',
+  standalone: false,
   styleUrls: ['./popovers.component.scss'],
   templateUrl: './popovers.component.html',
 })

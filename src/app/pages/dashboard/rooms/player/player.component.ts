@@ -3,6 +3,7 @@ import { PlayerService, Track } from '../../../../@core/utils/player.service';
 
 @Component({
   selector: 'ngx-player',
+  standalone: false,
   styleUrls: ['./player.component.scss'],
   templateUrl: './player.component.html',
 })

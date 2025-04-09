@@ -9,6 +9,7 @@ import { OrderProfitChartSummary, OrdersProfitChartData } from '../../../@core/d
 
 @Component({
   selector: 'ngx-ecommerce-charts',
+  standalone: false,
   styleUrls: ['./charts-panel.component.scss'],
   templateUrl: './charts-panel.component.html',
 })

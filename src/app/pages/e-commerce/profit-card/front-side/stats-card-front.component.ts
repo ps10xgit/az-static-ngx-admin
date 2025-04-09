@@ -4,6 +4,7 @@ import { takeWhile } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-stats-card-front',
+  standalone: false,
   styleUrls: ['./stats-card-front.component.scss'],
   templateUrl: './stats-card-front.component.html',
 })

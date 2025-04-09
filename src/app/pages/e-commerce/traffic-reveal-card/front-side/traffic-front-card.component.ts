@@ -6,6 +6,7 @@ import { TrafficList } from '../../../../@core/data/traffic-list';
 
 @Component({
   selector: 'ngx-traffic-front-card',
+  standalone: false,
   styleUrls: ['./traffic-front-card.component.scss'],
   templateUrl: './traffic-front-card.component.html',
 })

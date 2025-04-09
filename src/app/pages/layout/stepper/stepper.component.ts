@@ -3,6 +3,7 @@ import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms
 
 @Component({
   selector: 'ngx-stepper',
+  standalone: false,
   templateUrl: 'stepper.component.html',
   styleUrls: ['stepper.component.scss'],
 })

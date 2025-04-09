@@ -4,6 +4,7 @@ import { takeWhile } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-traffic-cards-header',
+  standalone: false,
   styleUrls: ['./traffic-cards-header.component.scss'],
   templateUrl: './traffic-cards-header.component.html',
 })

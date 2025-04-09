@@ -3,6 +3,7 @@ import { NbThemeService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-echarts-bar-animation',
+  standalone: false,
   template: `
     <div echarts [options]="options" class="echart"></div>
   `,

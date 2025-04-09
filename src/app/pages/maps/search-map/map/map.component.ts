@@ -3,6 +3,7 @@ import { PositionModel } from '../entity/position.model';
 
 @Component({
   selector: 'ngx-map',
+  standalone: false,
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss'],
 })

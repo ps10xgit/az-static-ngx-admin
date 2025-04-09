@@ -6,6 +6,7 @@ import { LiveUpdateChart, EarningData } from '../../../../@core/data/earning';
 
 @Component({
   selector: 'ngx-earning-card-front',
+  standalone: false,
   styleUrls: ['./earning-card-front.component.scss'],
   templateUrl: './earning-card-front.component.html',
 })

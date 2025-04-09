@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 import './ckeditor.loader';
-import 'ckeditor';
 
 @Component({
   selector: 'ngx-ckeditor',
+  standalone: false,
   template: `
     <nb-card>
       <nb-card-header>

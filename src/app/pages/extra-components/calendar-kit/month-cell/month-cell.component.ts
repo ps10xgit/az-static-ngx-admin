@@ -9,6 +9,7 @@ import { TranslationWidth } from '@angular/common';
 
 @Component({
   selector: 'ngx-calendar-kit-month-cell',
+  standalone: false,
   styleUrls: ['month-cell.component.scss'],
   templateUrl: 'month-cell.component.html',
 })

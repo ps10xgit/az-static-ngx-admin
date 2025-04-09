@@ -3,6 +3,7 @@ import { NbDialogRef } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-showcase-dialog',
+  standalone: false,
   templateUrl: 'showcase-dialog.component.html',
   styleUrls: ['showcase-dialog.component.scss'],
 })

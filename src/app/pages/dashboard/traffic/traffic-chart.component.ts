@@ -2,9 +2,11 @@ import { delay, takeWhile } from 'rxjs/operators';
 import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../@core/utils';
+import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-traffic-chart',
+  standalone: false,
   template: `
     <div echarts
          [options]="option"
@@ -141,7 +143,7 @@ export class TrafficChartComponent implements AfterViewInit, OnDestroy {
               },
               areaStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
                     color: trafficTheme.gradFrom,
                   }, {

@@ -3,9 +3,11 @@ import { AfterViewInit, Component, Input, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../../@core/utils';
 import { ElectricityChart } from '../../../../@core/data/electricity';
+import { graphic } from 'echarts/core';
 
 @Component({
   selector: 'ngx-electricity-chart',
+  standalone: false,
   styleUrls: ['./electricity-chart.component.scss'],
   template: `
     <div echarts
@@ -129,7 +131,7 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
                 normal: {
                   width: eTheme.lineWidth,
                   type: eTheme.lineStyle,
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
                     color: eTheme.lineGradFrom,
                   }, {
@@ -143,7 +145,7 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
               },
               areaStyle: {
                 normal: {
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
                     color: eTheme.areaGradFrom,
                   }, {
@@ -163,7 +165,7 @@ export class ElectricityChartComponent implements AfterViewInit, OnDestroy {
                 normal: {
                   width: eTheme.lineWidth,
                   type: eTheme.lineStyle,
-                  color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                  color: new graphic.LinearGradient(0, 0, 0, 1, [{
                     offset: 0,
                     color: eTheme.lineGradFrom,
                   }, {

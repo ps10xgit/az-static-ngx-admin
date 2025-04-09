@@ -3,10 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { combineLatest } from 'rxjs';
 import { takeWhile } from 'rxjs/operators';
 import { NbThemeService } from '@nebular/theme';
-import { registerMap } from 'echarts';
+import { registerMap } from 'echarts/core';
 
 @Component({
   selector: 'ngx-bubble-map',
+  standalone: false,
   styleUrls: ['./bubble-map.component.scss'],
   template: `
     <nb-card>

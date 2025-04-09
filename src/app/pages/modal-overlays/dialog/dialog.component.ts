@@ -5,6 +5,7 @@ import { DialogNamePromptComponent } from './dialog-name-prompt/dialog-name-prom
 
 @Component({
   selector: 'ngx-dialog',
+  standalone: false,
   templateUrl: 'dialog.component.html',
   styleUrls: ['dialog.component.scss'],
 })

@@ -4,6 +4,7 @@ import { ChatService } from './chat.service';
 
 @Component({
   selector: 'ngx-chat',
+  standalone: false,
   templateUrl: 'chat.component.html',
   styleUrls: ['chat.component.scss'],
   providers: [ ChatService ],

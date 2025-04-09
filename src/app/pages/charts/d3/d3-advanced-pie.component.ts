@@ -1,8 +1,11 @@
 import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @Component({
   selector: 'ngx-d3-advanced-pie',
+  standalone: true,
+  imports: [NgxChartsModule],
   template: `
     <ngx-charts-advanced-pie-chart
       [scheme]="colorScheme"

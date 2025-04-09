@@ -4,6 +4,7 @@ import { NgxLegendItemColor } from './enum.legend-item-color';
 
 @Component({
   selector: 'ngx-legend-chart',
+  standalone: false,
   styleUrls: ['./legend-chart.component.scss'],
   templateUrl: './legend-chart.component.html',
 })

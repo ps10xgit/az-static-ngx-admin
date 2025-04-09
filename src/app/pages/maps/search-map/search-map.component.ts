@@ -3,6 +3,7 @@ import { PositionModel } from './entity/position.model';
 
 @Component({
   selector: 'ngx-search-map',
+  standalone: false,
   templateUrl: './search-map.component.html',
 })
 export class SearchMapComponent {

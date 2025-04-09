@@ -16,6 +16,7 @@ interface FSEntry {
 
 @Component({
   selector: 'ngx-tree-grid',
+  standalone: false,
   templateUrl: './tree-grid.component.html',
   styleUrls: ['./tree-grid.component.scss'],
 })
@@ -80,6 +81,7 @@ export class TreeGridComponent {
 
 @Component({
   selector: 'ngx-fs-icon',
+  standalone: false,
   template: `
     <nb-tree-grid-row-toggle [expanded]="expanded" *ngIf="isDir(); else fileIcon">
     </nb-tree-grid-row-toggle>

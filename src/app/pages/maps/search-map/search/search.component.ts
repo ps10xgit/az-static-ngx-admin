@@ -3,6 +3,7 @@ import { PositionModel } from '../entity/position.model';
 
 @Component({
   selector: 'ngx-search',
+  standalone: false,
   templateUrl: './search.component.html',
 })
 export class SearchComponent implements OnInit {

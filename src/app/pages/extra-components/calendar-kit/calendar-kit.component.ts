@@ -3,6 +3,7 @@ import { CalendarKitMonthCellComponent } from './month-cell/month-cell.component
 
 @Component({
     selector: 'ngx-calendar-kit',
+    standalone: false,
     templateUrl: 'calendar-kit.component.html',
     styleUrls: ['calendar-kit.component.scss'],
 })

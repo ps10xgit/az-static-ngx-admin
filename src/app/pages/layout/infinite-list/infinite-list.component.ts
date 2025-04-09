@@ -3,6 +3,7 @@ import { NewsService } from '../news.service';
 
 @Component({
   selector: 'ngx-infinite-list',
+  standalone: false,
   templateUrl: 'infinite-list.component.html',
   styleUrls: ['infinite-list.component.scss'],
 })

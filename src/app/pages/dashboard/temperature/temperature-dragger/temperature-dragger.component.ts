@@ -16,6 +16,7 @@ const VIEW_BOX_SIZE = 300;
 
 @Component({
   selector: 'ngx-temperature-dragger',
+  standalone: false,
   templateUrl: './temperature-dragger.component.html',
   styleUrls: ['./temperature-dragger.component.scss'],
 })
@@ -33,11 +34,9 @@ export class TemperatureDraggerComponent implements AfterViewInit, OnChanges {
   @Input() thumbBorderColor;
   @Input() maxLeap = 0.4;
 
-  value = 50;
+  
   @Output() valueChange = new EventEmitter<Number>();
-  @Input('value') set setValue(value) {
-    this.value = value;
-  }
+  @Input() value = 50;
 
   @Input() min = 0; // min output value
   @Input() max = 100; // max output value

@@ -10,6 +10,7 @@ import { takeWhile } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-country-orders-map',
+  standalone: false,
   styleUrls: ['./country-orders-map.component.scss'],
   template: `
     <div leaflet [leafletOptions]="options" [leafletLayers]="layers" (leafletMapReady)="mapReady($event)"></div>

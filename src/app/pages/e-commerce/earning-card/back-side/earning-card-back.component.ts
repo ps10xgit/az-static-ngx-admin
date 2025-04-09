@@ -4,6 +4,7 @@ import { takeWhile } from 'rxjs/operators';
 
 @Component({
   selector: 'ngx-earning-card-back',
+  standalone: false,
   styleUrls: ['./earning-card-back.component.scss'],
   templateUrl: './earning-card-back.component.html',
 })

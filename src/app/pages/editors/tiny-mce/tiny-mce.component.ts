@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ngx-tiny-mce-page',
+  standalone: false,
   template: `
     <nb-card>
       <nb-card-header>
