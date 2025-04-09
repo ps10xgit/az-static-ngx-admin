@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { NgxEchartsModule } from 'ngx-echarts';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { NbCardModule } from '@nebular/theme';
 import { ThemeModule } from '../../@theme/theme.module';
 
@@ -11,7 +10,7 @@ import { ChartjsPieComponent } from './chartjs/chartjs-pie.component';
 import { ChartjsMultipleXaxisComponent } from './chartjs/chartjs-multiple-xaxis.component';
 import { ChartjsBarHorizontalComponent } from './chartjs/chartjs-bar-horizontal.component';
 import { ChartjsRadarComponent } from './chartjs/chartjs-radar.component';
-import { ChartjsModule } from '@ctrl/ngx-chartjs';
+import { provideCharts, withDefaultRegisterables } from 'ng2-charts';
 import { D3BarComponent } from './d3/d3-bar.component';
 import { D3LineComponent } from './d3/d3-line.component';
 import { D3PieComponent } from './d3/d3-pie.component';
@@ -27,18 +26,6 @@ import { EchartsBarAnimationComponent } from './echarts/echarts-bar-animation.co
 import { EchartsRadarComponent } from './echarts/echarts-radar.component';
 
 const components = [
-  ChartjsBarComponent,
-  ChartjsLineComponent,
-  ChartjsPieComponent,
-  ChartjsMultipleXaxisComponent,
-  ChartjsBarHorizontalComponent,
-  ChartjsRadarComponent,
-  D3BarComponent,
-  D3LineComponent,
-  D3PieComponent,
-  D3AreaStackComponent,
-  D3PolarComponent,
-  D3AdvancedPieComponent,
   EchartsLineComponent,
   EchartsPieComponent,
   EchartsBarComponent,
@@ -51,12 +38,25 @@ const components = [
 @NgModule({
   imports: [
     ThemeModule,
-    ChartjsModule,
     ChartsRoutingModule,
-    NgxEchartsModule,
-    NgxChartsModule,
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    }),
     NbCardModule,
+    ChartjsBarComponent,
+    ChartjsLineComponent,
+    ChartjsPieComponent,
+    ChartjsMultipleXaxisComponent,
+    ChartjsBarHorizontalComponent,
+    ChartjsRadarComponent,
+    D3BarComponent,
+    D3LineComponent,
+    D3PieComponent,
+    D3AreaStackComponent,
+    D3PolarComponent,
+    D3AdvancedPieComponent,
   ],
+  providers: [provideCharts(withDefaultRegisterables())],
   declarations: [...routedComponents, ...components],
 })
 export class ChartsModule {}

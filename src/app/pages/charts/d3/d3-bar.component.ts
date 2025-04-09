@@ -1,9 +1,11 @@
 import { Component, OnDestroy } from '@angular/core';
 import { NbThemeService } from '@nebular/theme';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @Component({
   selector: 'ngx-d3-bar',
-  standalone: false,
+  standalone: true,
+  imports: [NgxChartsModule],
   template: `
     <ngx-charts-bar-vertical
       [scheme]="colorScheme"

@@ -4,7 +4,6 @@ import { NbThemeService } from '@nebular/theme';
 import { LayoutService } from '../../../../@core/utils';
 import { ElectricityChart } from '../../../../@core/data/electricity';
 import { graphic } from 'echarts/core';
-import { NgxEchartsModule } from 'ngx-echarts';
 
 @Component({
   selector: 'ngx-electricity-chart',
