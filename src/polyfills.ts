@@ -29,7 +29,6 @@ import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 /** Evergreen browsers require these. **/
 import 'core-js/es/reflect';
 
-
 /** ALL Firefox browsers require the following to support `@angular/animation`. **/
 // import 'web-animations-js';  // Run `npm install --save web-animations-js`.
 
@@ -48,9 +47,24 @@ import 'zone.js';  // Included with Angular CLI.
  * Date, currency, decimal and percent pipes.
  * Needed for: All but Chrome, Firefox, Edge, IE11 and Safari 10
  */
-import 'core-js/es7/array';
-import 'core-js/es7/object';
+import 'core-js/es/array';
+import 'core-js/es/object';
 
 if (typeof SVGElement.prototype.contains === 'undefined') {
   SVGElement.prototype.contains = HTMLDivElement.prototype.contains;
+}
+
+/**
+ * Fix for Angular error - Generic type 'ModuleWithProviders<T>' requires 1 type argument(s)
+ * in ng2-smart-table and ng2-completer dependencies.
+ * 
+ * See https://stackoverflow.com/questions/62755093/angular-error-generic-type-modulewithproviderst-requires-1-type-arguments
+ */
+import { Provider, Type } from '@angular/core';
+
+declare module "@angular/core" {
+  interface ModuleWithProviders<T = any> {
+      ngModule: Type<T>;
+      provider?: Provider;
+  }
 }
