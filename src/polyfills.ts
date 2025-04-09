@@ -53,18 +53,3 @@ import 'core-js/es/object';
 if (typeof SVGElement.prototype.contains === 'undefined') {
   SVGElement.prototype.contains = HTMLDivElement.prototype.contains;
 }
-
-/**
- * Fix for Angular error - Generic type 'ModuleWithProviders<T>' requires 1 type argument(s)
- * in ng2-smart-table and ng2-completer dependencies.
- * 
- * See https://stackoverflow.com/questions/62755093/angular-error-generic-type-modulewithproviderst-requires-1-type-arguments
- */
-import { Provider, Type } from '@angular/core';
-
-declare module "@angular/core" {
-  interface ModuleWithProviders<T = any> {
-      ngModule: Type<T>;
-      provider?: Provider;
-  }
-}
