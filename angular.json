@@ -25,6 +25,31 @@
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images",
                 "output": "/assets/img/markers"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/tinymce/icons",
+                "output": "/icons/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/tinymce/models",
+                "output": "/models/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/tinymce/skins",
+                "output": "/skins/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/tinymce/themes",
+                "output": "/themes/"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/tinymce/plugins",
+                "output": "/plugins/"
               }
             ],
             "styles": [
@@ -41,9 +66,6 @@
             "scripts": [
               "node_modules/pace-js/pace.min.js",
               "node_modules/tinymce/tinymce.min.js",
-              "node_modules/tinymce/themes/silver/theme.min.js",
-              "node_modules/tinymce/plugins/link/plugin.min.js",
-              "node_modules/tinymce/plugins/table/plugin.min.js",
               "node_modules/echarts/dist/echarts.min.js",
               "node_modules/echarts/dist/extension/bmap.min.js"
             ],
@@ -114,7 +136,6 @@
               "node_modules/tinymce/tinymce.min.js",
               "node_modules/tinymce/themes/silver/theme.min.js",
               "node_modules/tinymce/plugins/link/plugin.min.js",
-              "node_modules/tinymce/plugins/paste/plugin.min.js",
               "node_modules/tinymce/plugins/table/plugin.min.js",
               "node_modules/echarts/dist/echarts.min.js",
               "node_modules/echarts/dist/extension/bmap.min.js",
